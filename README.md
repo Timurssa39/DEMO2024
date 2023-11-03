@@ -10,3 +10,5 @@
 |                |ens224              |192.168.0.129   |/27             |                      |
 |HQ-SRV          |ens192              |192.168.0.126   |/25             |192.168.0.1           |                                   
 |BR-SRV          |ens192              |192.168.0.158   |/27             |192.168.0.129         |                      
+
+![image](https://github.com/Timurssa39/DEMO2024/assets/148869003/6adb776a-6e3c-4f4e-a433-1c9a1b77fdde)
