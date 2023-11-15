@@ -107,6 +107,23 @@ netmask 255.255.255.224``
 
 # HQ-SRV
 
+``auto ens192
+iface ens192 inet static
+address 192.168.0.126
+netmask 255.255.255.128
+gateway 192.168.0.1``
+
+Сохранил конфигурацию комбинацией клавиш 
+
+``ctrl+s``
+
+Вышел из конфигурационно файлы комбинацией клавиш
+
+``ctrl+x``
+
+Перезагрузил сервис работы с сетью
+
+``Systemctl restart networking.service``
 
 
 
