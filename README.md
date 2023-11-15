@@ -82,6 +82,33 @@ netmask 255.255.255.128``
 
 # BR-R
 
+``auto ens192
+iface ens192 inet static
+address 192.168.0.165
+netmask 255.255.255.252
+gateway 192.168.0.166``
+
+``auto ens224
+iface ens224 inet static
+address 192.168.0.129
+netmask 255.255.255.224``
+
+Сохранил конфигурацию комбинацией клавиш 
+
+``ctrl+s``
+
+Вышел из конфигурационно файлы комбинацией клавиш
+
+``ctrl+x``
+
+Перезагрузил сервис работы с сетью
+
+``Systemctl restart networking.service``
+
+# HQ-SRV
+
+
+
 
 
 
