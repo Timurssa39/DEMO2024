@@ -12,3 +12,86 @@
 |BR-SRV          |ens192              |192.168.0.158   |/27             |192.168.0.129         |                      
 
 ![image](https://github.com/Timurssa39/DEMO2024/assets/148869003/6adb776a-6e3c-4f4e-a433-1c9a1b77fdde)
+
+# 1. Настройка интерфейсов
+Посмотрел существующие интерфейсы с помощью команды 
+
+``ip a``
+
+Зашел в файл настройки интерфейсов ISP, с помощью команды
+
+``nano /etc/network/interfaces``
+
+
+Настроил IP на все интерфейсы исходя из таблицы адресации
+
+# ISP
+
+``auto ens192
+iface ens192 inet static
+address 10.12.24.10
+netmask 255.255.255.0
+gateway 10.12.24.254``
+
+``auto ens224
+iface ens224 inet static
+address 192.168.0.162
+netmask 255.255.255.252``
+
+``auto ens256
+iface ens256 inet static
+address 192.168.0.166
+netmask 255.255.255.252``
+
+Сохранил конфигурацию комбинацией клавиш 
+
+``ctrl+s``
+
+Вышел из конфигурационно файлы комбинацией клавиш
+
+``ctrl+x``
+
+Перезагрузил сервис работы с сетью
+
+``Systemctl restart networking.service``
+
+# HQ-R
+
+``auto ens192
+iface ens192 inet static
+address 192.168.0.161
+netmask 255.255.255.252
+gateway 192.168.0.162``
+
+``auto ens224
+iface ens224 inet static
+address 192.168.0.1
+netmask 255.255.255.128``
+
+Сохранил конфигурацию комбинацией клавиш 
+
+``ctrl+s``
+
+Вышел из конфигурационно файлы комбинацией клавиш
+
+``ctrl+x``
+
+Перезагрузил сервис работы с сетью
+
+``Systemctl restart networking.service``
+
+# BR-R
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
