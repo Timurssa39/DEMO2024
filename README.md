@@ -156,6 +156,31 @@
 
 ``Systemctl restart networking.service``
 
+# BR-SRV
+
+``auto ens192``
+
+``iface ens192 inet static``
+
+``address 192.168.0.158``
+
+``netmask 255.255.255.224``
+
+``gateway 192.168.0.129``
+
+Сохранил конфигурацию комбинацией клавиш 
+
+``ctrl+s``
+
+Вышел из конфигурационно файлы комбинацией клавиш
+
+``ctrl+x``
+
+Перезагрузил сервис работы с сетью
+
+``Systemctl restart networking.service``
+
+
 
 
 
