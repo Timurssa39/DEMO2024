@@ -42,7 +42,7 @@
 
 ``iface ens224 inet static``
 
-``address 192.168.0.162``
+``address 192.168.0.166``
 
 ``netmask 255.255.255.252``
 
@@ -51,7 +51,7 @@
 
 ``iface ens256 inet static``
 
-``address 192.168.0.166``
+``address 192.168.0.162``
 
 ``netmask 255.255.255.252``
 
