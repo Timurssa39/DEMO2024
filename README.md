@@ -218,7 +218,7 @@ ctrl+x
 Systemctl restart networking.service
 ```
 
-# 2. Установка и настрйока FRR
+# 2. Установка и настройка FRR
 
 Установил пакет frr
 
