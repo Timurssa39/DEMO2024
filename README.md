@@ -15,13 +15,14 @@
 
 # 1. Настройка интерфейсов
 Посмотрел существующие интерфейсы с помощью команды 
-
-``ip a``
+```
+ip a
+```
 
 Зашел в файл настройки интерфейсов ISP, с помощью команды
-
-``nano /etc/network/interfaces``
-
+```
+nano /etc/network/interfaces
+```
 
 Настроил IP на все интерфейсы исходя из таблицы адресации
 
@@ -59,48 +60,59 @@ netmask 255.255.255.252
 
 
 Сохранил конфигурацию комбинацией клавиш 
-
-``ctrl+s``
+```
+ctrl+s
+```
 
 Вышел из конфигурационно файлы комбинацией клавиш
-
-``ctrl+x``
+```
+ctrl+x
+```
 
 Перезагрузил сервис работы с сетью
-
-``Systemctl restart networking.service``
+```
+Systemctl restart networking.service
+```
 
 # HQ-R
 
-``auto ens192``
+```
+auto ens192
 
-``iface ens192 inet static``
+iface ens192 inet static
 
-``address 192.168.0.161``
+address 192.168.0.161
 
-``netmask 255.255.255.252``
+netmask 255.255.255.252
 
-``gateway 192.168.0.162``
+gateway 192.168.0.162
 
-``auto ens224``
+auto ens224
 
-``iface ens224 inet static``
+iface ens224 inet static
 
-``address 192.168.0.1``
+address 192.168.0.1
 
-``netmask 255.255.255.128``
+netmask 255.255.255.128
+```
 
 Сохранил конфигурацию комбинацией клавиш 
 
-``ctrl+s``
+```
+ctrl+s
+```
 
 Вышел из конфигурационно файлы комбинацией клавиш
 
-``ctrl+x``
+```
+ctrl+x
+```
 
 Перезагрузил сервис работы с сетью
 
-``Systemctl restart networking.service``
+```
+Systemctl restart networking.service
+```
 
 # BR-R
 
