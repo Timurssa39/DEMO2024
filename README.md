@@ -27,7 +27,9 @@
 
 # ISP
 
-``auto ens192``
+```
+auto ens192
+```
 
 ``iface ens192 inet static``
 
