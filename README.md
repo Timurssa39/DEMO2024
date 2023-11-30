@@ -29,33 +29,33 @@
 
 ```
 auto ens192
+
+iface ens192 inet stati
+
+address 10.12.24.10
+
+netmask 255.255.255.0
+
+gateway 10.12.24.254
+
+
+auto ens224
+
+iface ens224 inet static
+
+address 192.168.0.166
+
+netmask 255.255.255.252
+
+
+auto ens256
+
+iface ens256 inet static
+
+address 192.168.0.162
+
+netmask 255.255.255.252
 ```
-
-``iface ens192 inet static``
-
-``address 10.12.24.10``
-
-``netmask 255.255.255.0``
-
-``gateway 10.12.24.254``
-
-
-``auto ens224``
-
-``iface ens224 inet static``
-
-``address 192.168.0.166``
-
-``netmask 255.255.255.252``
-
-
-``auto ens256``
-
-``iface ens256 inet static``
-
-``address 192.168.0.162``
-
-``netmask 255.255.255.252``
 
 
 Сохранил конфигурацию комбинацией клавиш 
