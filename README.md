@@ -180,6 +180,59 @@
 
 ``Systemctl restart networking.service``
 
+# 2. Установка и настрйока FRR
+
+Установил пакет frr
+
+``apt-get install frr``
+
+Проверил состояние frr
+
+``systemctl status frr``
+
+Зашел в файл конфигурации и изменил значение ospfd=no на ospfd=yes
+
+``nano /etc/frr/daemons``
+
+Перезагрузил службы
+
+``systemctl restart frr``
+
+Зашел в настрйоку маршрутизации на ISP
+
+``vtysh``
+
+Просмотрел IP-адреса и их состояние 
+
+``show ip interface brief``
+
+Зашел в конфигурацию терминала
+
+``conf t``
+
+Запустил процесс 
+
+``router ospf``
+
+Добавил интерфейсы 
+
+``network (ip-адрес и маску) area 0`` 
+
+``network (ip-адрес и маску) area 0``
+
+Просмотрел соседей
+
+``do show ip ospf neighbor``
+
+Вышел из конфигуарции терминала командой ``exit``
+
+Сохранил конфигурацию
+
+``copy running-config startup-config``
+
+
+
+
 
 
 
