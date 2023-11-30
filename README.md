@@ -116,133 +116,182 @@ Systemctl restart networking.service
 
 # BR-R
 
-``auto ens192``
+```
+auto ens192
 
-``iface ens192 inet static``
+iface ens192 inet static
 
-``address 192.168.0.165``
+address 192.168.0.165
 
-``netmask 255.255.255.252``
+netmask 255.255.255.252
 
-``gateway 192.168.0.166``
+gateway 192.168.0.166
 
-``auto ens224``
+auto ens224
 
-``iface ens224 inet static``
+iface ens224 inet static
 
-``address 192.168.0.129``
+address 192.168.0.129
 
-``netmask 255.255.255.224``
+netmask 255.255.255.224
+```
 
 Сохранил конфигурацию комбинацией клавиш 
 
-``ctrl+s``
+```
+ctrl+s
+```
 
 Вышел из конфигурационно файлы комбинацией клавиш
 
-``ctrl+x``
+```
+ctrl+x
+```
 
 Перезагрузил сервис работы с сетью
 
-``Systemctl restart networking.service``
+```
+Systemctl restart networking.service
+```
 
 # HQ-SRV
 
-``auto ens192``
+```
+auto ens192
 
-``iface ens192 inet static``
+iface ens192 inet static
 
-``address 192.168.0.126``
+address 192.168.0.126
 
-``netmask 255.255.255.128``
+netmask 255.255.255.128
 
-``gateway 192.168.0.1``
+gateway 192.168.0.1
+```
 
 Сохранил конфигурацию комбинацией клавиш 
 
-``ctrl+s``
+```
+ctrl+s
+```
 
 Вышел из конфигурационно файлы комбинацией клавиш
 
-``ctrl+x``
+```
+ctrl+x
+```
 
 Перезагрузил сервис работы с сетью
 
-``Systemctl restart networking.service``
+```
+Systemctl restart networking.service
+```
 
 # BR-SRV
 
-``auto ens192``
+```
+auto ens192
 
-``iface ens192 inet static``
+iface ens192 inet static
 
-``address 192.168.0.158``
+address 192.168.0.158
 
-``netmask 255.255.255.224``
+netmask 255.255.255.224
 
-``gateway 192.168.0.129``
+gateway 192.168.0.129
+```
 
 Сохранил конфигурацию комбинацией клавиш 
 
-``ctrl+s``
+```
+ctrl+s
+```
 
 Вышел из конфигурационно файлы комбинацией клавиш
 
-``ctrl+x``
+```
+ctrl+x
+```
 
 Перезагрузил сервис работы с сетью
 
-``Systemctl restart networking.service``
+```
+Systemctl restart networking.service
+```
 
 # 2. Установка и настрйока FRR
 
 Установил пакет frr
 
-``apt-get install frr``
+```
+apt-get install frr
+```
 
 Проверил состояние frr
 
-``systemctl status frr``
+```
+systemctl status frr
+```
 
 Зашел в файл конфигурации и изменил значение ospfd=no на ospfd=yes
 
-``nano /etc/frr/daemons``
+```
+nano /etc/frr/daemons
+```
 
 Перезагрузил службы
 
-``systemctl restart frr``
+```
+systemctl restart frr
+```
 
 Зашел в настрйоку маршрутизации на ISP
 
-``vtysh``
+```
+vtysh
+```
 
 Просмотрел IP-адреса и их состояние 
 
-``show ip interface brief``
+```
+show ip interface brief
+```
 
 Зашел в конфигурацию терминала
 
-``conf t``
+```
+conf t
+```
 
 Запустил процесс 
 
-``router ospf``
+```
+router ospf
+```
 
 Добавил интерфейсы 
 
-``network (ip-адрес и маску) area 0`` 
+```
+network (ip-адрес и маску) area 0 
 
-``network (ip-адрес и маску) area 0``
+network (ip-адрес и маску) area 0
+```
 
 Просмотрел соседей
 
-``do show ip ospf neighbor``
+```
+do show ip ospf neighbor
+```
 
-Вышел из конфигуарции терминала командой ``exit``
+Вышел из конфигуарции терминала командой
+```
+exit
+```
 
 Сохранил конфигурацию
 
-``copy running-config startup-config``
+```
+copy running-config startup-config
+```
 
 
 
